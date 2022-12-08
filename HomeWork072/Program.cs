@@ -20,7 +20,7 @@ int x = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите столбец: ");
 int y = Convert.ToInt32(Console.ReadLine());
 
-if(x > arr.GetLength(0) || y > arr.GetLength(1))
+if(x > arr.GetLength(0) || y > arr.GetLength(1) || x == 0 || y == 0)
 {
     Console.WriteLine($"{x}, {y} -> Такого числа нет в массиве");
 }
